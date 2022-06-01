@@ -79,7 +79,7 @@ KoBART는 SKT가 개발한 모델로서 기존 BART 모델에서 사용된 Text 
 # DATA PRE-PROCESSING
 - AI Hub의 데이터는 철저한 품질 관리가 이루어진 데이터로써 특별한 전처리 과정이 필요치 않다고 판단했습니다.
 
-## Translate
+## Translation
 
 - 한국어-영어 번역 말뭉치 중 기술과학 분야 35만개를 다운로드 했으나
 학습 과정에서의 소요시간을 줄이기 위해 그 중 빅데이터와 컴퓨터 카테고리의 데이터\
@@ -144,7 +144,7 @@ tokenized_data = data.map(preprocess_function, batched=True)
 
 # Result
 
-## translation 
+## Translation 
 
 Colab pro+ 기준 할당된 GPU보다 학습시 많은 GPU를 사용하게 되면서 다운되는 현상이 일어나\
 Batch_size를 8, epoch을 15로 설정하고 학습시켰습니다.
@@ -176,7 +176,7 @@ Overfit 현상이 일어나서 10 epochs에서 학습을 중단하고 5 epochs�
 - 낮지 않은 Validation Loss에도 불구하고 좋은 성능을 보입니다.
 - 또한 IT 카테고리의 데이터를 학습시킨 결과 '머신러닝'등 관련 전문용어에 대한 해석도 훌륭히 해내는 모습을 보입니다.
 
-## summarization
+## Summarization
 
 번역에서 GPU 메모리 이슈를 겪었고 데이터의 양 또한 더 많아서 번역과 동일하게
 Batch_size를 8, epoch을 15로 설정하고 학습시켰습니다.
