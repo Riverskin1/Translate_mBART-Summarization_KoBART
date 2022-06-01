@@ -54,7 +54,7 @@ BART 모델이 나오며 여러 자연어 벤치마크에서 sota를 달성한 �
 
 # Model Used
 
-| Model               | Purpose        |
+| Model               | # Purpose        |
 | ------------        | -------------: |
 | mBART 50 (large)    |    translation |
 | KoBART              |  Summarization |
@@ -77,8 +77,8 @@ KoBART는 SKT가 개발한 모델로서 기존 BART 모델에서 사용된 Text 
 약 40GB 이상의 한국어 텍스트에 대해 학습한 한국어 encoder-decoder 언어 모델입니다.
 
 # DATA PRE-PROCESSING
-- AI Hub의 데이터는 철저한 품질 관리가 이루어진 데이터로써 특별한 전처리 과정이 필요치 않았습니다.
-- 
+- AI Hub의 데이터는 철저한 품질 관리가 이루어진 데이터로써 특별한 전처리 과정이 필요치 않다고 판단했습니다.
+
 ## Translate
 
 - 한국어-영어 번역 말뭉치 중 기술과학 분야 35만개를 다운로드 했으나
@@ -149,9 +149,9 @@ tokenized_data = data.map(preprocess_function, batched=True)
 Colab pro+ 기준 할당된 GPU보다 학습시 많은 GPU를 사용하게 되면서 다운되는 현상이 일어나\
 Batch_size를 8, epoch을 15로 설정하고 학습시켰습니다.
 
-| Epoch               | Training Loss  | Validation Loss|
-| -------------:      | -------------: | -------------: |
-|1	                  |  0.843600      |0.789460        |
+| Epoch               | Training Loss    | Validation Loss|
+| -------------:      | -------------:   | -------------: |
+|1	                  |  0.843600        |0.789460        |
 |2	                  |  0.684200	     |0.722583        |
 |3	                  |  0.546200	     |0.717286        |
 |4	                  |  0.431400	     |0.740622        | 
