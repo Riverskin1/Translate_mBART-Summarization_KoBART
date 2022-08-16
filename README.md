@@ -221,11 +221,6 @@ Overfit 현상이 나타났습니다.
 
 - 추후 추가 예정
 
-# Web translator application
-
-- pyscript를 이용한 웹 번역기 사이트 연구
-
-- 추후 추가 예정
 
 
 
