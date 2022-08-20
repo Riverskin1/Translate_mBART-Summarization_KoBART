@@ -40,6 +40,7 @@
 | EN to KR (ICT part) |        350,000 |
 | Text to Summary     |        180,000 |
 
+<br><br>
 # BART
 
 BART는 Bidirectional Auto-Regressive Transformer의 약자이며
@@ -49,6 +50,7 @@ BERT와 GPT를 하나로 합친 형태로, 기존 seq2seq transformer 모델을\
 BART 모델이 나오며 여러 자연어 벤치마크에서 sota를 달성한 역사를 보고\
 공통된 모델로 BART를 선정하게 되었습니다.
 
+<br><br>
 # Model Used
 
 | Model               | # Purpose        |
@@ -56,7 +58,7 @@ BART 모델이 나오며 여러 자연어 벤치마크에서 sota를 달성한 �
 | mBART 50 (large)    |    translation |
 | KoBART              |  Summarization |
 
-
+<br><br>
 ## mBART 50_large (Translate thesis EN to KR)
 
 mBART는 50개의 언어로 구성된 말뭉치를 활용하는 모델으로써\
@@ -68,6 +70,7 @@ mBART는 BART와 유사하게 사전학습 단계에서 원본 문장을 고의�
 [MASK]토큰으로 치환하는 Text Infilling 방법과\
 입력 내에서 문장의 순서를 바꾸는 Sentence Permutation방법 두 가지를 활용합니다.
 
+<br><br>
 ## KoBART (Summarize KR thesis)
 
 KoBART는 SKT가 개발한 모델로서 기존 BART 모델에서 사용된 Text Infilling 노이즈 함수를 사용해\
@@ -76,12 +79,14 @@ KoBART는 SKT가 개발한 모델로서 기존 BART 모델에서 사용된 Text 
 # DATA PRE-PROCESSING
 - AI Hub의 데이터는 철저한 품질 관리가 이루어진 데이터로써 특별한 전처리 과정이 필요치 않다고 판단했습니다.
 
+<br><br>
 ## Translation
 
 - 한국어-영어 번역 말뭉치 중 기술과학 분야 35만개를 다운로드 했으나
 학습 과정에서의 소요시간을 줄이기 위해 그 중 빅데이터와 컴퓨터 카테고리의 데이터\
 총 15만5천개 데이터를 사용했습니다.
 
+<br><br>
 ## Summarization
 
 - 논문자료 요약(한글) 중 학술논문(전체요약) 18만개의 데이터를 json파일로써 다운로드 받았고\
@@ -93,7 +98,7 @@ AI Hub의 데이터는 매우 깔끔히 정돈된 데이터여서\
 삼성 SR Translation(https://translate.samsung.com/) 번역기에 돌린 번역문(한글)을 크롤링해서 노이즈 데이터를 획득하였습니다.\
 획득한 노이즈 데이터를 기존 데이터 14만개 + 노이즈 데이터 1만개(번역 후 나온 한글) 총 15만개를 KoBART 모델로 학습을 진행했습니다.
 
-
+<br><br>
 # Modeling
 
 - Huggingface API (tokenizer, model)을 download 및 import
