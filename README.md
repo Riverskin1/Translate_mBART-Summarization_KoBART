@@ -28,9 +28,6 @@
 
 나온 한글원문이 다시 input으로 들어가 output으로 한글요약문이 나오게 설계하였습니다.
 
-# 완성된 모델
-
-
 <br><br>
 # Dataset
 - 문서번역 AI Hub 한국어-영어 번역 말뭉치(기술과학) : https://aihub.or.kr/aidata/30719 
