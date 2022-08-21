@@ -70,7 +70,6 @@ mBART는 BART와 유사하게 사전학습 단계에서 원본 문장을 고의�
 [MASK]토큰으로 치환하는 Text Infilling 방법과\
 입력 내에서 문장의 순서를 바꾸는 Sentence Permutation방법 두 가지를 활용합니다.
 
-<br><br>
 ## KoBART (Summarize KR thesis)
 
 KoBART는 SKT가 개발한 모델로서 기존 BART 모델에서 사용된 Text Infilling 노이즈 함수를 사용해\
