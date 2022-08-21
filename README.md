@@ -144,7 +144,7 @@ tokenized_data = data.map(preprocess_function, batched=True)
 
 
 # Result
-
+<br><br>
 ## Translation 
 
 Colab pro+ 기준 할당된 GPU보다 학습시 많은 GPU를 사용하게 되면서 다운되는 현상이 일어나\
