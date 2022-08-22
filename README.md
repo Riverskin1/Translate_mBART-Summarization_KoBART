@@ -47,7 +47,7 @@ BART는 Bidirectional Auto-Regressive Transformer의 약자이며
 BERT와 GPT를 하나로 합친 형태로, 기존 seq2seq transformer 모델을\
 새로운 Pre-training objective를 통해 학습하여 하나로 합친 모델입니다.
 
-BART 모델이 나오며 여러 자연어 벤치마크에서 sota를 달성한 역사를 보고\
+BART 모델이 나오며 여러 자연어 벤치마크에서 sota를 달성한 를 보고\
 공통된 모델로 BART를 선정하게 되었습니다.
 
 <br><br>
