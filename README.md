@@ -145,6 +145,7 @@ tokenized_data = data.map(preprocess_function, batched=True)
 
 # Result
 <br><br>
+
 ## Translation 
 
 Colab pro+ 기준 할당된 GPU보다 학습시 많은 GPU를 사용하게 되면서 다운되는 현상이 일어나\
@@ -217,7 +218,6 @@ Overfit 현상이 나타났습니다.
 
 - 처음 보았을 때는 문장이 자연스럽고 획기적으로 단어와 문장의 수가 줄어들어 요약에 성공한 것으로 간주했으나
 원문의 내용을 요약한 것이 아닌 약 150음절이 넘어가면 문장을 자르고 끝내버려 그 이후의 글은 생략해버리는 결과가 나왔습니다.
-
 
 
 
