@@ -107,7 +107,7 @@ from transformers import MBartForConditionalGeneration, MBart50TokenizerFast
 model = MBartForConditionalGeneration.from_pretrained("facebook/mbart-large-50")
 tokenizer = MBartTokenizer.from_pretrained("facebook/mbart-large-50", src_lang="en_XX", tgt_lang="ko_KR")
 ```
-- 전처리가 끝난 데이터 zip을 이용해 하나의 data 생성
+- 전처리가 끝난 데이터 zip을 이용해 하나의 data 생성.
 
 ```python
 data = []
